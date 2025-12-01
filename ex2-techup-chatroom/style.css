@@ -1,1 +1,69 @@
-/* Start coding here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* พื้นหลังสีขาวตามภาพ */
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* แถบหัวข้อด้านบน */
+.header {
+    background-color: #6a6a6a; /* สีเทาเข้ม */
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.chat-area {
+    padding: 20px;
+    /* ใช้ Flexbox ในการจัดวางกล่องข้อความ */
+    display: flex;
+    flex-direction: column; /* เรียงจากบนลงล่าง */
+}
+.message {
+    width: 200px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    display: inline-block; 
+}
+.received {
+    align-self: flex-start; 
+    background-color: #6a6a6a;
+    border-radius: 20px;
+    color: #fff;
+}
+.sent {
+    align-self: flex-end;
+    border-radius: 20px;
+    color: #fff;
+}
+.sent.green {
+    background-color: #38c172;
+}
+.sent.gray {
+    background-color: #dfdfdf;
+    color: #333;
+    position: relative;
+}
+.emoji {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.received .emoji {
+    padding: 0;
+}
+button {
+    font-size: 0.7rem;
+    color: white;
+    background-color: #bebebe;
+    border: 0px;
+    border-radius: 100%;
+    padding: 2px 5px;
+    position: absolute;
+    top: -1px;
+    right: -3px;
+}

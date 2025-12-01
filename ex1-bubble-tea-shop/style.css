@@ -1,5 +1,50 @@
 body {
   font-family: "Kanit";
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Start coding here */
+
+.box {
+    max-width: 600px;
+    width: 90%;
+    position: relative; 
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: #fff;
+}
+
+.picture-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    padding: 100px 8px 6px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.location {
+    position: absolute;
+    top: 20px; 
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 6px 18px;
+    font-size: 1.5rem;
+}
